@@ -1297,8 +1297,8 @@ input, select, textarea {
 			}
 
 		#header .logo img {
-			width: 8rem;        		/* increase if you want it bigger (7rem or 8rem works well) */
-			height: 8rem;
+			width: 14rem;        		/* increase if you want it bigger (7rem or 8rem works well) */
+			height: 14rem;
 			object-fit: contain;
 			border-radius: 50%;   		/* or 50% if you prefer circular */
 			display: block;
@@ -1562,7 +1562,7 @@ input, select, textarea {
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
-			width: 40rem;
+			width: 60rem;
 			max-width: 100%;
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
@@ -1712,4 +1712,47 @@ input, select, textarea {
 			.gallery-item:hover {
 			transform: scale(1.03);
 			border-color: rgba(255, 255, 255, 0.4);
+			}
+
+		/* Sub-gallery media items */
+			.gallery-grid > img,
+			.gallery-grid > video {
+			width: 100%;
+			height: auto;
+			display: block;
+			border-radius: 8px;
+			}
+
+			/* ==== Services Section ==== */
+
+			.services-grid {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 2rem;
+			margin-top: 2rem;
+			}
+
+			.service-item {
+			display: block;
+			background: rgba(255, 255, 255, 0.05);
+			border-radius: 8px;
+			overflow: hidden;
+			padding: 1.5rem;
+			}
+
+			.service-item img {
+			width: 100%;
+			height: 220px;
+			object-fit: cover;
+			object-position: center;
+			display: block;
+			border-radius: 6px;
+			margin-bottom: 1rem;
+			}
+		/* Optional: make sub-gallery images a little less aggressively cropped on mobile */
+			@media screen and (max-width: 736px) {
+			.gallery-grid > img,
+			.gallery-grid > video {
+				height: 200px;
+			}
 			}
