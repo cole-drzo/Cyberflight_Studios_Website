@@ -1297,8 +1297,8 @@ input, select, textarea {
 			}
 
 		#header .logo img {
-			width: 14rem;        		/* increase if you want it bigger (7rem or 8rem works well) */
-			height: 14rem;
+			width: 12rem;        		/* increase if you want it bigger (7rem or 8rem works well) */
+			height: 12rem;
 			object-fit: contain;
 			border-radius: 50%;   		/* or 50% if you prefer circular */
 			display: block;
@@ -1641,6 +1641,10 @@ input, select, textarea {
 
 		}
 
+		html, body {
+		overflow-x: hidden;
+		}
+
 /* Footer */
 
 	#footer {
@@ -1723,7 +1727,7 @@ input, select, textarea {
 			border-radius: 8px;
 			}
 
-			/* ==== Services Section ==== */
+		/* Services Section */
 
 			.services-grid {
 			display: grid;
