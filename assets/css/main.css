@@ -1753,7 +1753,9 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 			.gallery-grid > img,
 			.gallery-grid > video {
-				height: 200px;
+				height: auto;
+				max-height: none;
+				object-fit: contain;
 			}
 			}
 
@@ -1819,5 +1821,23 @@ input, select, textarea {
 			form > .fields > .field.quarter {
 				width: 100%;
 				padding-left: 0;
+			}
+			}
+
+			@media screen and (max-width: 480px) {
+			#main article h2.major {
+				font-size: 1rem;
+				letter-spacing: 0.14rem;
+				line-height: 1.35;
+			}
+			}
+
+			@media screen and (max-width: 480px) {
+			#main article h2.major {
+				font-size: 1rem;
+				letter-spacing: 0.14rem;
+				line-height: 1.35;
+				word-break: break-word;
+				overflow-wrap: anywhere;
 			}
 			}
