@@ -1641,10 +1641,6 @@ input, select, textarea {
 
 		}
 
-		html, body {
-		overflow-x: hidden;
-		}
-
 /* Footer */
 
 	#footer {
