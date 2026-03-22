@@ -1756,3 +1756,68 @@ input, select, textarea {
 				height: 200px;
 			}
 			}
+
+			/* Mobile overflow fixes */
+			@media screen and (max-width: 480px) {
+			html, body {
+				overflow-x: clip;
+				width: 100%;
+				max-width: 100%;
+			}
+
+			#wrapper,
+			#header,
+			#main,
+			#footer {
+				width: 100%;
+				max-width: 100%;
+			}
+
+			#header .content {
+				width: 100%;
+				max-width: 100%;
+			}
+
+			#header .content .inner {
+				width: 100%;
+				max-width: 100%;
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+
+			#header nav {
+				width: 100%;
+				max-width: 100%;
+			}
+
+			#header nav ul {
+				width: 100%;
+				min-width: 0;
+				max-width: 100%;
+			}
+
+			#header nav ul li a {
+				width: 100%;
+				min-width: 0;
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+
+			#header h1 {
+				letter-spacing: 0.25rem;
+				word-break: break-word;
+			}
+
+			form > .fields {
+				width: 100%;
+				margin: 0;
+			}
+
+			form > .fields > .field,
+			form > .fields > .field.half,
+			form > .fields > .field.third,
+			form > .fields > .field.quarter {
+				width: 100%;
+				padding-left: 0;
+			}
+			}
