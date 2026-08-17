@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>COLE DRZO</title>
+		<title>Cyberflight Studios</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -20,11 +20,11 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-  						<img src="images/logo.png" alt="COLE DRZO Logo" />
+  						<img src="images/logo.png" alt="Cyberflight Studios Logo" />
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>Cole Dorazio</h1>
+								<h1>Cyberflight Studios</h1>
 								<p>Blending engineering, technology, and creativity<br />
 								to create radical visual experiences. Lets Make Your Ideas Move. </p>
 							</div>
@@ -47,9 +47,29 @@
 							<article id="about">
 								<h2 class="major">About</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p> Hello, my name is Cole Dorazio, I love tech, design, and the art of capturing movement. I was born and raised in Charlote, NC. </p>
-								<p> I tell real stories through creative visuals and am always learning new ways to make my ideas move. Be sure to check out my <a href="#gallery"> gallery</a>.</p>
-								<p> Also check out the list of photography <a href="#services"> services </a>that I offer.</p>
+								<p>
+									Hello, my name is <strong>Cole Dorazio, founder of Cyberflight Studios</strong>.
+									Born and raised in Charlotte, NC, I've always had a passion for technology,
+									design, and the art of capturing movement.
+								</p>
+
+								<p>
+									Cyberflight Studios grew from that passion into a creative studio focused on
+									telling real stories through photography, videography, and dynamic visual media.
+									Whether I'm capturing the energy of an event, creating visuals for a local business,
+									or documenting the moments that matter to someone personally, my goal is to create
+									work that feels authentic, engaging, and memorable.
+								</p>
+
+								<p>
+									I'm always learning, experimenting, and finding new ways to bring ideas to life.
+									Be sure to check out my <a href="#gallery">gallery</a> to see some of my work,
+									or explore the <a href="#services">services</a> offered through Cyberflight Studios.
+								</p>
+
+								<p>
+									<strong>Let's make your ideas move.</strong>
+								</p>
 							</article>
 
 						<!-- Gallery -->
@@ -313,35 +333,120 @@
 							<article id="contact">
 							<h2 class="major">Contact</h2>
 							<span class="image main">
-								<img src="images/contact-banner.jpg" alt="Contact COLE DRZO Creations" />
+								<img src="images/contact-banner.jpg" alt="Contact Cyberflight Studios" />
 							</span>
 
 							<p>
-								Thanks for deciding to reach out! Let me know the type 
-								of work you're looking for and 
-								I will get back to you in a timely manner 
-								with a direction for your vision.
+								Have a project, event, or idea in mind? I'd love to hear about it.
+								Whether you're looking for photography, videography, aerial media,
+								or creative coverage for something a little different, tell me what
+								you have in mind and what you're hoping to create.
 							</p>
 
-							<form method="post" action="#">
+							<p>
+								Fill out the form below with a few details about your project and
+								I'll get back to you as soon as I can to discuss your vision,
+								availability, and the next steps.
+							</p>
+
+							<p>
+								<strong>Let's make your ideas move.</strong>
+							</p>
+
+							<form
+								id="contact-form"
+								method="POST"
+								action="https://forms.cyberflight.studio/"
+							>
 								<div class="fields">
-								<div class="field half">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
+
+									<div class="field half">
+										<label for="name">Name</label>
+										<input
+											type="text"
+											name="name"
+											id="name"
+											maxlength="100"
+											required
+										/>
+									</div>
+
+									<div class="field half">
+										<label for="email">Email</label>
+										<input
+											type="email"
+											name="email"
+											id="email"
+											maxlength="254"
+											required
+										/>
+									</div>
+
+									<div class="field half">
+										<label for="event-date">Event / Project Date</label>
+										<input
+											type="date"
+											name="event-date"
+											id="event-date"
+										/>
+									</div>
+
+									<div class="field half">
+										<label for="service">Service</label>
+										<select name="service" id="service">
+											<option value="">Select a service</option>
+											<option value="Photography">Photography</option>
+											<option value="Wedding Photography">Wedding Photography</option>
+											<option value="Videography">Videography</option>
+											<option value="Drone / FPV Media">Drone / FPV Media</option>
+											<option value="Business / Branding">Business / Branding</option>
+											<option value="Other">Other</option>
+										</select>
+									</div>
+
+									<div class="field">
+										<label for="message">Tell Me About Your Project</label>
+										<textarea
+											name="message"
+											id="message"
+											rows="4"
+											maxlength="5000"
+											required
+										></textarea>
+									</div>
+
+									<div class="field">
+										<div
+											class="cf-turnstile"
+											data-sitekey="YOUR_ACTUAL_SITE_KEY"
+											data-theme="dark">
+										</div>
+									</div>
+
+									<!-- Spam honeypot. Leave this hidden. -->
+									<div style="display: none;" aria-hidden="true">
+										<label for="website">Website</label>
+										<input
+											type="text"
+											name="website"
+											id="website"
+											tabindex="-1"
+											autocomplete="off"
+										/>
+									</div>
+
 								</div>
-								<div class="field half">
-									<label for="email">Email</label>
-									<input type="text" name="email" id="email" />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="4"></textarea>
-								</div>
-								</div>
+
 								<ul class="actions">
-								<li><input type="submit" value="Send Message" class="primary" /></li>
-								<li><input type="reset" value="Reset" /></li>
+									<li>
+										<input type="submit" value="Send Message" class="primary" />
+									</li>
+									<li>
+										<input type="reset" value="Reset" />
+									</li>
 								</ul>
+
+								<p id="form-status" aria-live="polite"></p>
 							</form>
 
 							<ul class="icons">
@@ -614,6 +719,49 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		<script>
+			const contactForm = document.getElementById("contact-form");
+			const formStatus = document.getElementById("form-status");
+			const submitButton = contactForm.querySelector('input[type="submit"]');
+
+			contactForm.addEventListener("submit", async function (event) {
+				event.preventDefault();
+
+				formStatus.textContent = "Sending...";
+				submitButton.disabled = true;
+
+				try {
+					const response = await fetch(contactForm.action, {
+						method: "POST",
+						body: new FormData(contactForm)
+					});
+
+					if (!response.ok) {
+						throw new Error("Submission failed");
+					}
+
+					formStatus.textContent =
+						"Thank you! Your message has been sent to Cyberflight Studios.";
+
+					contactForm.reset();
+
+				} catch (error) {
+					console.error(error);
+
+					formStatus.textContent =
+						"Sorry, your message could not be sent. Please try again.";
+				} finally {
+					submitButton.disabled = false;
+				}
+			});
+		</script>
+
+		<script
+			src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+			async
+			defer>
+		</script>
 
 	</body>
 </html>
