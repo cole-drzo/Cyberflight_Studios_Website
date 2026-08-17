@@ -1,22 +1,36 @@
-# COLE DRZO Portfolio Website
+# Cyberflight Studios Website
 
-Personal portfolio website for Cole, built with HTML, CSS, and JavaScript and deployed with GitHub Pages.
+Official website for **Cyberflight Studios LLC**, a photography, videography, and creative media studio based in Charlotte, North Carolina.
 
-## Overview
+## Website
 
-This site showcases:
-- About Section
-- Photo Gallery
-- Services
-- Contact Section
+**cyberflight.studio**
 
-## Built With
+## Services
 
-- HTML5
-- CSS3
-- JavaScript
-- HTML5 UP "Dimension" template as a base
+* Photography
+* Event Coverage
+* Portraits
+* Business & Branding
+* Videography
+* Drone & FPV Media
 
-## Project Structure
+## About
 
-Will adjust shortly...
+This repository contains the source code and assets for the Cyberflight Studios website.
+
+The site is built as a lightweight static website and hosted using GitHub Pages.
+
+## Technologies
+
+* HTML
+* CSS
+* JavaScript
+* GitHub Pages
+
+## Credits
+
+Based on the **Dimension** template by HTML5 UP.
+
+Template: HTML5 UP
+License: Creative Commons Attribution 3.0
